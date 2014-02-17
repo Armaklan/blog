@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block navclass %}active{%endblock%}
+{% block content %}
+<section id="content" class="content">
+{% block content_title %}
+{% endblock %}
+
+{% for article in articles_page.object_list %}
+        <article class="hentry">
+                <header> 
+                    <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> 
+                    <span class="text-muted"><span class="glyphicon glyphicon-time"></span> {{ article.locale_date }}</span>
+                    <div class="pull-right">{% if article.tags %} <span class="glyphicon glyphicon-tags"></span> {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>, {% endfor %}{% endif %}</div>
+                </header>
+                <div class="entry-content"> {{ article.summary }} </div><!-- entry-content -->
+        </article>
+{% endfor %}
+{% include 'pagination.html' %}
+</section><!-- content -->
+{% endblock content %}

@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'ZUBER Lionel'
 SITENAME = 'Informatica Sapientaë'
-SITEURL = 'http://armaklan.org'
-#SITEURL = ''
+#SITEURL = 'http://armaklan.org/blog'
+SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
 

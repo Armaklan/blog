@@ -12,10 +12,10 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=localhost
+SSH_HOST=ftp.armaklan.fr
 SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
+SSH_USER=armaklan
+SSH_TARGET_DIR=/homez.667/armaklan/www/blog
 
 S3_BUCKET=my_s3_bucket
 

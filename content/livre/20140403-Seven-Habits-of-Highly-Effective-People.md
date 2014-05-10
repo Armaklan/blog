@@ -1,5 +1,5 @@
 Title: Seven Habits of Highly Effective People
-Date: 2014-04-03 15:20
+Date: 2014-04-23 15:20
 Tags:  Critique, Développement Personnel, Organisation
 Category: Ouvrages
 

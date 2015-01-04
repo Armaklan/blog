@@ -1,11 +1,11 @@
 Title: Aggrandissez votre VM
 Date: 2014-09-26 02:00
-Tags: Linux, Cli, Tips
+Tags: Linux, Cli, Tips, Informatique
 Category: Linux
 
 Il est presque midi. Depuis votre arrivé au boulot ce matin, vous avez préparez soigneusement une machine virtuelle. Tout y est : votre IDE, le serveur apache, le navigateur, les librairies... Tout est enfin prêt, il ne vous reste plus qu'une étape : montez votre dump de base de données ! Et là... C'est le drame ! Burnout comme dirait certain, votre disque est plein. C'est un échec. Votre VM est inutilisable.
 
-Vous avez déjà vécu cette situation ? Moi oui ! Et il m'a fallu un peu de temps pour trouver comment aggrandir ce ***** de disque ! Du coup, histoire de pas rechercher la prochaine fois, je me suis dit qu'un petit blog ne fera pas de mal !
+Vous avez déjà vécu cette situation ? Moi oui ! Et il m'a fallu un peu de temps pour trouver comment aggrandir ce * * * de disque ! Du coup, histoire de pas rechercher la prochaine fois, je me suis dit qu'un petit blog ne fera pas de mal !
 
 Le Contexte
 -----------

@@ -1,6 +1,6 @@
 Title: Retrospective jdRoll - Partie 1
 Date: 2014-08-01 13:36
-Tags: Projets, Méthodes, jdRoll
+Tags: Projets, Méthodes, jdRoll, Informatique
 Category: Programmation
 
 Plus d'un an après le début de jdRoll, je me suis dit qu'il était temps de se poser et de faire une rétrospective du projet. Qu'est-ce qui a marché ? Quels ont été les disfonctionnements ? Qu'ai-je appris durant cette année qui pour moi a été riche en expérience.

@@ -1,11 +1,11 @@
 Title: Retour sur la formation Angular
 Date: 2014-03-21 09:42
-Tags: Formation, angular, blog
+Tags: Formation, angular, blog, Informatique
 Category: Programmation
 
 ### Le temps des éloges
 
-En général, je ne suis pas quelqu'un qui apprécie réellement les formations techniques... Les formations générales, tels quel celle sur la communication, je trouve ça drole, je participe, et j'apprécie le coté humain. Mais concernant les formations techniques, il me faut bien l'avouer : en général je m'ennuie sévère. 
+En général, je ne suis pas quelqu'un qui apprécie réellement les formations techniques... Les formations générales, tels quel celle sur la communication, je trouve ça drole, je participe, et j'apprécie le coté humain. Mais concernant les formations techniques, il me faut bien l'avouer : en général je m'ennuie sévère.
 
 Pourquoi ? Je fais parti de ceux qui ont la chance de comprendre les choses rapidement et de savoir les mettres en application tout aussi vite (chacun ses forces). Du coup, très vite je me retrouve à devoir m'occuper en attendant que les plus lents raccrochent le wagon.
 

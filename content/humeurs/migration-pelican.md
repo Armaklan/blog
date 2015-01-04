@@ -1,6 +1,6 @@
 Title: Migration vers Pélican !
 Date: 2014-02-17 21:16
-Tags: Migration, Blog
+Tags: Migration, Blog, Informatique
 Category: Humeurs
 
 Nouvelle fraîche du jour : le blog a migré ve le moteur de blog statique __Pélican__ ! Bye Bye Pluxml ! Non pas que celui-ci m'est mal servi : pour tous ceux qui veulent un blog léger et efficace, c'est une plateforme de choix. J'y recontrait toutefois une limitation : l'absence de support __markdown__. Cela faisait bien longtemps que je ne rédigeait plus mes messages directement dans le navigateur mais via mon éditeur de texte favori (sublime texte en ce moment), et en utilisant du balisage léger (txt2tags pendant un temps, markdown aujourd'hui).

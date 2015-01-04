@@ -1,6 +1,6 @@
 Title: Virage technologique
 Date: 2014-02-17 22:43
-Tags: Php, Javascript
+Tags: Php, Javascript, Informatique
 Category: Humeurs
 
 Ces derniers temps, j'opère un changement technologique autant au niveau professionnel que personnel. Au revoir, l'éco-système Java, bonjour à Javascript et Php. Cela fait un certain temps que je cherchais à sortir de l'éco-système Java que je n'ai jamais aimé pour plusieurs raisons : lourdeur, sur-architecture des projets, lenteur d'évolution, ... Mais détaillons tout de même.

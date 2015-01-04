@@ -1,6 +1,6 @@
 Title: Retrospective jdRoll - Les choix techniques
 Date: 2014-08-02 10:46
-Tags: Projets, Méthodes, jdRoll, Framework, Outils
+Tags: Projets, Méthodes, jdRoll, Framework, Outils, Informatique
 Category: Programmation
 
 Après avoir parler de ma façon de travailler sur ce projet, il est temps de revenir sur les choix techniques du projet :

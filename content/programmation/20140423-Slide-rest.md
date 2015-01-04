@@ -1,6 +1,6 @@
 Title: Du reste au ReST
 Date: 2014-04-23 22:07
-Tags: Slide, ReST, architecture
+Tags: Slide, ReST, architecture, Informatique
 Category: Programmation
 
 Un billet très court pour indiquer que j'ai mis en partage une nouvelle présentation. Cette fois-ci, reste est à l'honneur !

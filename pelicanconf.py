@@ -10,6 +10,9 @@ SITEURL = ''
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'fr'
+LOCALE = ('fra',   # On Windows
+    'fr_FR'     # On Unix/Linux
+    )
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

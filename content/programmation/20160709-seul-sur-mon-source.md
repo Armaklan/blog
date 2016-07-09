@@ -3,8 +3,6 @@ Date: 2016-07-09 08:00
 Tags: Informatique, Humeurs
 Category: Programmation
 
-# Seul sur son code source...
-
 Au boulot, pendant presque deux ans, j'ai été seul sur mon code source. Je ne travaillais pas seul, mais mes collègues s'occupaient du backend pendant que je construisais la partie front-end Angular de l'application. Bref, j'avais mon source, ils avaient le leur, et nous n'avions qu'un seul point réel de communication : l'API. Et fatalement arriva le jour où, pour des raisons diverses, des collègues durent mettre les mains dans le code source et là... C'est le drame !
 
 J'exagère bien entendu : j'ai une certaine exigence dans la forme de mon code source qui le rend assez facile à lire et a appréhender par de nouvelles ressources. Je suis notamment un acharné du découpage en sous-fonction. Mais malgré cela, je me suis rendu compte que mon code souffrait de quelques problèmes gênants : notamment des comportements qui étaient devenu implicite. Moi, il ne me posait aucun problème, mais pour les nouveaux venus ces comportements avaient l'apparence de magie noire... Et la magie, on ne la comprend pas, et on ne la debuggue pas.

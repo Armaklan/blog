@@ -1,5 +1,5 @@
 Title: The Mostly Adequate Guide to FP
-Date: 2016-07-10 23:20
+Date: 2016-08-04 08:19
 Tags:  Critique, Informatique, Fonctionelle, Javascript
 Category: Lectures
 

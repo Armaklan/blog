@@ -39,27 +39,27 @@ La programmation impérative met en avant le "comment" : ajoute 1 au compteur, p
 
 Prenons l'exemple très simple d'une somme. En impératif :
 
-'''
+```
 function sum(vals) {
-var total = 0;
-for(var i = 0; i < vals.length; i++) {
-total = total + vals[i];
+  var total = 0;
+  for(var i = 0; i < vals.length; i++) {
+    total = total + vals[i];
+  }
+  return sum;
 }
-return sum;
-}
-'''
+```
 
 Et en fonctionnelle :
 
-'''
+```
 function sum(vals) {
-return vals.reduce(add);
+  return vals.reduce(add);
 
-function add(e1, e2) {
-return e1 + e2;
+  function add(e1, e2) {
+    return e1 + e2;
+  }
 }
-}
-'''
+```
 
 Le code est équivalent, mais dans le second cas, il décrit l'intention : réduire la liste en additionnant ses éléments.
 

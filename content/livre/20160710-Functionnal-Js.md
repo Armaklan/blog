@@ -1,9 +1,9 @@
 Title: Functional Programming in Javascript, Dan Mantyla
 Date: 2016-07-10 23:20
-Tags:  Critique, Informatique, Fonctionelle, Javascript
+Tags: Critique, Informatique, Fonctionelle, Javascript
 Category: Lectures
 
-![Couverture]({filename}/images/functional-js.jpg)
+![Couverture]({static}/images/functional-js.jpg)
 
 Cela fait quelques années que j'entends parler de programmation fonctionnelle et que je tourne autour du sujet, lisant quelques articles, regardant quelques tutoriel, sans jamais y plonger réellement. Il faut dire que même si je me suis intéressé à quelques technologies comme Scala ou même Clojure, je suis aujourd'hui principalement un développeur front-end qui reste dans l'écosystème javascript. Ma curiosité a été encore plus attisée quand j'ai eu à travailler avec un ingénieur féru de fonctionnel (Karol, si tu me lis ! ;) ), et de nombreuses discussions que j'ai eu avec lui ont continué à faire évoluer mon "coding style" vers ce type de programmation.
 

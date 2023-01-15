@@ -1,28 +1,28 @@
 Title: LightTable, le challenger des éditeurs
 Date: 2015-02-01 11:00
-Tags:  Libre, Traitement De Texte, Programmation, Informatique
+Tags: Libre, Traitement De Texte, Programmation, Informatique
 Category: Outils
 
 A l'heure où l'on parle énormément de Sublime Text, Atom, et Brackets, j'aimerai vous présenter un de leur challenger : LightTable. Pour tout vous dire, c'est celui que j'utilise au quotidien. Avant de rentrer dans le détail, un petit condensé des plus et moins de ce programme.
 
-<center>![LightTable]({filename}/images/lt.jpg)</center>
+<center>![LightTable]({static}/images/lt.jpg)</center>
 
 # En rapide
 
 ## Pourquoi choisir LightTable
 
-- __Opensource__ : Si je n'attachais pas d'importance à l'opensource, je serait probablement encore en train d'utiliser Sublime Text qui me semble rester au-dessus du lot.
-- __Keyboard friendly__ : Toutes les commandes de l'éditeur, même la plus insignifiante, peut être lancer au clavier que ce soit à l'aide de raccourcis, ou du panels de commandes. J'ai fuit Brackets à cause de ce point.
-- __Personnalisable__ : A l'instar de ses concurrents, on peut configurer tous les petits détails de son éditeur très finement.
-- __Stable et rapide__ : Peu de ralentissement, peu de plantage, ce qui n'était pas le cas par exemple avec Atom.
-- __Centré sur les sources__ : Tout au plus près du code : la documentation, les erreurs, les résultats...
-- __Watch et REPL__ : Pour certains langages il est possible de se connecter un REPL et d'exécuter du code directement depuis son éditeur. Une sorte de mode debug permanent ;)
+- **Opensource** : Si je n'attachais pas d'importance à l'opensource, je serait probablement encore en train d'utiliser Sublime Text qui me semble rester au-dessus du lot.
+- **Keyboard friendly** : Toutes les commandes de l'éditeur, même la plus insignifiante, peut être lancer au clavier que ce soit à l'aide de raccourcis, ou du panels de commandes. J'ai fuit Brackets à cause de ce point.
+- **Personnalisable** : A l'instar de ses concurrents, on peut configurer tous les petits détails de son éditeur très finement.
+- **Stable et rapide** : Peu de ralentissement, peu de plantage, ce qui n'était pas le cas par exemple avec Atom.
+- **Centré sur les sources** : Tout au plus près du code : la documentation, les erreurs, les résultats...
+- **Watch et REPL** : Pour certains langages il est possible de se connecter un REPL et d'exécuter du code directement depuis son éditeur. Une sorte de mode debug permanent ;)
 
 ## Les points moins cool
 
-- __Un eco-système moins riches__ : Au moment où j'écrit ces lignes, j'ai compté environ 120 plugins disponible. On est loin de l'eco-système des autres éditeurs, mais, on trouve tout de même l'essentiel.
-- __Clavier internationaux__ : Par défaut, certains mappings ne fonctionnent pas sur clavier français (AZERTY). Je pense nottament au système d'autoclose des `[`,`(` et qu'il a fallut que je configure manuellement (cf Chapitre configuration).
-- __ClojureScript et API mal documenté__ : Le système de plugins s'appuie sur ClojureScript. L'API est plutôt mal documenté, il faut donc mettre les mains dans les sources pour comprendre. Autrement dit, aujourd'hui, batir un plugin pour LightTable n'est pas des plus évident.
+- **Un eco-système moins riches** : Au moment où j'écrit ces lignes, j'ai compté environ 120 plugins disponible. On est loin de l'eco-système des autres éditeurs, mais, on trouve tout de même l'essentiel.
+- **Clavier internationaux** : Par défaut, certains mappings ne fonctionnent pas sur clavier français (AZERTY). Je pense nottament au système d'autoclose des `[`,`(` et qu'il a fallut que je configure manuellement (cf Chapitre configuration).
+- **ClojureScript et API mal documenté** : Le système de plugins s'appuie sur ClojureScript. L'API est plutôt mal documenté, il faut donc mettre les mains dans les sources pour comprendre. Autrement dit, aujourd'hui, batir un plugin pour LightTable n'est pas des plus évident.
 
 # Les mains dans le camboui
 
@@ -39,6 +39,7 @@ Rajoutons à cela le classique `Ctrl-f`pour rechercher dans le fichier actif, et
 ## Configurer son editeur
 
 La configuration de l'éditeur passe par deux fichiers :
+
 - User behaviors : qui définit les comportements de l'éditeur et de ses plugins
 - User keymap : qui définit les raccourcis claviers
 
@@ -59,7 +60,7 @@ Pour les français, un petit block que je rajoute toujours pour la fermeture aut
 
 Il y a un point que je tient à signaler concernant les fichiers de configuration : l'autocomplétion de LightTable a été vraiment bien travaillé sur ce point ! Ainsi si je tape `[:editor "ctrl-n" ]`, je peut commencer à taper le mot "Next" pour la commande à exécuter. Là, LightTable va me proposer une liste de commande avec le même libellé que dans le panel de commande ! Bref, il est facile de s'y retrouver !
 
-<center>![Configuration et LightTable]({filename}/images/lt-config.jpg)</center>
+<center>![Configuration et LightTable]({static}/images/lt-config.jpg)</center>
 
 Coté configuration des comportements, la structure est assez similaire et la complétion tout aussi agréable :
 
@@ -79,17 +80,16 @@ Pour le javascript par exemple, la procédure la plus simple est la suivante :
 
 LightTable exécutera le code dans votre éditeur, et vous renverra le résultat.
 
-<center>![Evaluation in LightTable]({filename}/images/lt-eval.jpg)</center>
+<center>![Evaluation in LightTable]({static}/images/lt-eval.jpg)</center>
 
 # Les extensions cool
 
 La command `Plugins: Show plugin manager` permet d'afficher le gestionnaire de paquet et d'installer facilement les extensions. Voilà les principales extensions que j'utilise :
 
-- __Photons__ : pour ajouter et supprimer facilement mes dossiers de source.
-- __lt_snippets__ : Pour sa gestion fine des templates de code
-- __JsHint__ : Pour les contrôles de sources Js
-- __JsBeautifier__ : Etant donné que c'est moi-même qui est crée ce plugin
-- __Markdown__ : Pour la prévisualisation live de mes fichiers markdowns.
-- __Paredit__ et __Paredit Plus__ : Pour leurs commandes d'édition de texte avancé
-- __Vim__ et __Emacs__ : Pour les fans de ces deux éditeurs qui veulent se sentir comme à la maison ;)
-
+- **Photons** : pour ajouter et supprimer facilement mes dossiers de source.
+- **lt_snippets** : Pour sa gestion fine des templates de code
+- **JsHint** : Pour les contrôles de sources Js
+- **JsBeautifier** : Etant donné que c'est moi-même qui est crée ce plugin
+- **Markdown** : Pour la prévisualisation live de mes fichiers markdowns.
+- **Paredit** et **Paredit Plus** : Pour leurs commandes d'édition de texte avancé
+- **Vim** et **Emacs** : Pour les fans de ces deux éditeurs qui veulent se sentir comme à la maison ;)

@@ -27,8 +27,7 @@ FEED_DOMAIN = SITEURL
 LINKS =  ()
 
 # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/armaklan'),
-          ('G+', 'https://plus.google.com/115780595015515789252/posts'),)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = 10
 

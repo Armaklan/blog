@@ -60,7 +60,7 @@
                             Sur le site <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            {% for p in PAGES %}
+                            {% for p in pages %}
                                 <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">
                                 {{ p.title }}</a></li>
                             {% endfor %}

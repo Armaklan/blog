@@ -267,3 +267,5 @@ Encore une fois, Angular fournit tous les outils nécessaires. Savoir quand mett
 
 - Quand on crée un composant d'UI "générique", par exemple ceux d'une librairie graphique. Il s'agit typiquement du genre de composant que l'on veut flexible.
 - Au moment où l'on crée une variation dans un composant existant : gérer les variations à l'aide de ngIf est rarement une bonne idée. Complexité qui augmente avec le temps, risque de régression, etc.
+
+_Relecture : Gregory BACH, merci à lui._

@@ -295,7 +295,7 @@ export class Author {
   ) {}
 
   get designation() {
-    return `${this.civility} + ${this.firstname} + ${this.lastname}`;
+    return `${this.civility} ${this.firstname} ${this.lastname}`;
   }
 }
 ```

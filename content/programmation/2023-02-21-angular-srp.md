@@ -102,7 +102,7 @@ Pour la suite de ma réflexion, je vais me baser sur le template d'un composant 
 
 ```html
 <header>
-  <mat-slide-toggle [(ngModel)]="viewDone" data-test-viewDone>
+  <mat-slide-toggle data-test-viewDone [(ngModel)]="viewDone">
     Voir les tâches terminées
   </mat-slide-toggle>
   <button
@@ -141,7 +141,7 @@ Si je commence par extraire un composant pour la liste de tâches, j'obtiens :
 
 ```html
 <header>
-  <mat-slide-toggle [(ngModel)]="viewDone" data-test-viewDone>
+  <mat-slide-toggle data-test-viewDone [(ngModel)]="viewDone">
     Voir les tâches terminées
   </mat-slide-toggle>
   <button
@@ -162,8 +162,8 @@ J'extrais ensuite la description de la barre de header :
 
 ```html
 <app-todos-list-header
-  (add)="addItem()"
   [(viewDone)]="viewDone"
+  (add)="addItem()"
 ></app-todos-list-header>
 <app-todos-list-items
   [todos]="todo$"
@@ -219,7 +219,7 @@ Même si cela ne simplifie pas réellement mon composant, j'opterai donc pour ce
 
 ```html
 <app-action-bar>
-  <mat-slide-toggle [(ngModel)]="viewDone" data-test-viewDone>
+  <mat-slide-toggle data-test-viewDone [(ngModel)]="viewDone">
     Voir les tâches terminées
   </mat-slide-toggle>
   <button

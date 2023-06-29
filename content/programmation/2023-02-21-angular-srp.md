@@ -271,7 +271,7 @@ export class TodosListItemComponent {
     if (!author) {
       return undefined;
     }
-    return `${author.civility} + ${author.firstname} + ${author.lastname}`;
+    return `${author.civility} ${author.firstname} ${author.lastname}`;
   }
 }
 ```

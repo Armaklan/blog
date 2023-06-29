@@ -289,9 +289,9 @@ La classe Author ressemblerait donc à ceci :
 ```ts
 export class Author {
   constructor(
-    public civility?: string,
-    public firstname?: string,
-    public lastname?: string
+    public civility: string,
+    public firstname: string,
+    public lastname: string
   ) {}
 
   get designation() {

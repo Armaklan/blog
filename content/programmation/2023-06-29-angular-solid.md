@@ -1,5 +1,5 @@
 Title: Liskov et DI chez Angular
-Date: 2023-02-22 09:00
+Date: 2023-06-29 21:00
 Tags: Angular, SOLID, Architecture
 Category: Programmation
 

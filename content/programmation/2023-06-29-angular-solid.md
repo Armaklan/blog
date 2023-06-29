@@ -169,3 +169,5 @@ export class CreateTodoUseCase {
 Le simple changement de configuration me permettra d'avoir l'une ou l'autre de mes implémentations. C'est une fonctionnalité méconnue, mais qui peut rendre de grands services.
 
 Il ne me reste plus qu'à parler du "I" de SOLID, l'interface segregation. Suite dans le prochain épisode !
+
+_Relecture : encore Gregory BACH. Toujours un grand merci à lui._

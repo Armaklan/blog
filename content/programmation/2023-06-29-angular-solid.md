@@ -3,7 +3,7 @@ Date: 2023-06-29 21:00
 Tags: Angular, SOLID, Architecture
 Category: Programmation
 
-Il m'a fallu du temps pour rédiger la suite de mes articles au sujet de SOLID, en partie par manque de temps, en partie par difficulté à trouver leurs applications avec Angular. J'ai finalement de décidé de faire un article double parlant du principe de Liskov et de l'Inversion de dépendance.
+Il m'a fallu du temps pour rédiger la suite de mes articles au sujet de SOLID, en partie par manque de temps, en partie par difficulté à trouver leurs applications avec Angular. J'ai finalement décidé de faire un article double parlant du principe de Liskov et de l'Inversion de dépendance.
 
 N'hésitez pas à me faire un retour et à me proposer des améliorations !
 
@@ -33,7 +33,7 @@ class Cygne() {
 }
 ```
 
-Jusqu'à là, le principe de Liskov semble respecter. Si nous possédons un tableau d'animaux, nous pouvons faire voler indistinctement des Pélicans et des Cygnes.
+Jusque là, le principe de Liskov semble respecter. Si nous possédons un tableau d'animaux, nous pouvons faire voler indistinctement des Pélicans et des Cygnes.
 
 ```ts
 const animaux = [new Pelican(), new Cygne()];
@@ -61,9 +61,9 @@ animaux.forEach((animal) => animal.voler());
 
 L'introduction de la classe Souris viole le principe de Liskov : notre code, jusqu'alors fonctionnel, va lever une erreur. Ici, nous sommes face à une mauvaise abstraction : la classe "Animal" ne devrait pas définir la méthode voler.
 
-La lever d'erreur n'est pas le seul cas qui peut poser problèmes : dans les enfants, les méthodes ne doivent pas avoir d'effet de bord imprévu. Le comportement des enfants doit donc rester "prévisible".
+La levée d'erreur n'est pas le seul cas qui peut poser problème : dans les enfants, les méthodes ne doivent pas avoir d'effets de bord imprévu. Le comportement des enfants doit donc rester "prévisible".
 
-Pour ma part, je n'ai pas trouvé d'application "spécifique" à Angular concernant ce principe. Il s'applique aux objets angular comme il s'appliquerait aux objets standard. Mais si vous avez des idées ou cas d'application, je suis preneur !
+Pour ma part, je n'ai pas trouvé d'application "spécifique" à Angular concernant ce principe. Il s'applique aux objets angular comme il s'appliquerait aux objets standards. Mais si vous avez des idées ou cas d'application, je suis preneur !
 
 ## Dependency Inversion Principle
 
@@ -76,9 +76,9 @@ Si je cite wikipedia :
 
 Si je reformule ce principe : une classe ne doit pas dépendre de l'implémentation, mais uniquement du contrat d'interface, de ses dépendances.
 
-C'est un principe que l'on respecte assez facilement pour une simple et bonne raison : l'injection de dépendance. Ce mécanisme, fourni dans le framework Angular, répond directement à ce besoin. Grâce à l'injection, je peux modifier une implémentation, modifier ses propres dépendances, voir la remplacer totalement, sans pour autant modifier le code utilisant ma classe modifié.
+C'est un principe que l'on respecte assez facilement pour une simple et bonne raison : l'injection de dépendance. Ce mécanisme, fourni dans le framework Angular, répond directement à ce besoin. Grâce à l'injection, je peux modifier une implémentation, modifier ses propres dépendances, voir la remplacer totalement, sans pour autant modifier le code utilisant ma classe modifiée.
 
-Je profite tout de même de parler de l'injection de dépendant pour rappeler une fonctionnalité avancée de l'injecteur angular : l'injection par token. Cette fonctionnalité vous permet de fournir un service non par sa classe, mais un "nom".
+Je profite tout de même de parler de l'injection de dépendant pour rappeler une fonctionnalité avancée de l'injecteur angular : l'injection par token. Cette fonctionnalité vous permet de fournir un service non par sa classe, mais par un "nom".
 
 Imaginons le cas de figure suivant : une application prévue pour fonctionner soit "in memory", soit avec une base de donnée Firestore. Pour ma couche d'accès aux données, je définis l'interface suivante :
 
@@ -150,7 +150,7 @@ export class FirestoreTodoRepository implements TodoRepository {
 }
 ```
 
-Comment permettre à l'application de passer facilement de l'une à l'autre des implémentations ? La réponse est justement l'injection par token :
+Comment permettre à l'application de passer facilement d'une implémentation à l'autre ? La réponse est justement l'injection par token :
 
 ```ts
 export class CreateTodoUseCase {

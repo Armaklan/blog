@@ -33,7 +33,7 @@ class Cygne() {
 }
 ```
 
-Jusque là, le principe de Liskov semble respecter. Si nous possédons un tableau d'animaux, nous pouvons faire voler indistinctement des Pélicans et des Cygnes.
+Jusque là, le principe de Liskov semble respecté. Si nous possédons un tableau d'animaux, nous pouvons faire voler indistinctement des Pélicans et des Cygnes.
 
 ```ts
 const animaux = [new Pelican(), new Cygne()];
@@ -61,7 +61,7 @@ animaux.forEach((animal) => animal.voler());
 
 L'introduction de la classe Souris viole le principe de Liskov : notre code, jusqu'alors fonctionnel, va lever une erreur. Ici, nous sommes face à une mauvaise abstraction : la classe "Animal" ne devrait pas définir la méthode voler.
 
-La levée d'erreur n'est pas le seul cas qui peut poser problème : dans les enfants, les méthodes ne doivent pas avoir d'effets de bord imprévu. Le comportement des enfants doit donc rester "prévisible".
+La levée d'erreur n'est pas le seul cas qui peut poser problème : dans les enfants, les méthodes ne doivent pas avoir d'effets de bord imprévus. Le comportement des enfants doit donc rester "prévisible".
 
 Pour ma part, je n'ai pas trouvé d'application "spécifique" à Angular concernant ce principe. Il s'applique aux objets angular comme il s'appliquerait aux objets standards. Mais si vous avez des idées ou cas d'application, je suis preneur !
 

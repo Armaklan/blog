@@ -24,7 +24,7 @@ Le premier intérêt des architectures "store" est de découper l'application en
 - Une première partie qui contient les données et les règles de mises à jour : le Store.
 - Une seconde partie qui contient les composants graphiques.
 
-Nos composants conservent donc une responsabilité réduite : ils s'occupent de l'affichage (sélectionner les données et crée le rendu) et de l'interaction (suivre les actions utilisateurs et notifier le système).
+Nos composants conservent donc une responsabilité réduite : ils s'occupent de l'affichage (sélectionner les données et créer le rendu) et de l'interaction (suivre les actions utilisateurs et notifier le système).
 
 Le store, lui, stocke les données (états) et s'occupe de transformer les données au fil des actions utilisateurs. C'est le store qui sait ce qui doit être fait lors de chaque interaction.
 
@@ -40,7 +40,7 @@ Pour les devs angular, nous pouvons jusque là obtenir facilement ce comportemen
 
 ## Découper le métier en petite unité indépendante
 
-L'architecture des Stores ne s'arrête pas à ce premier découpage mais permet d'aller plus loin : découpler des unités fonctionnels indépendante.
+L'architecture des Stores ne s'arrête pas à ce premier découpage mais permet d'aller plus loin : découpler des unités fonctionnelles indépendantes.
 
 Dans notre cas :
 
@@ -48,11 +48,11 @@ Dans notre cas :
 - Les compteurs par catégorie
 - La tâche courante
 
-La liste des tâches n'a pas besoin de savoir ce qu'ils se passent du côté des compteurs ou de la tâche courante. Il en est de même pour chacun des blocs.
+La liste des tâches n'a pas besoin de savoir ce qu'ils se passe du côté des compteurs ou de la tâche courante. Il en est de même pour chacun des blocs.
 
-Grâce à cette architecture, le composant va diffuser un événement "TâcheTerminer" dans le système et :
+Grâce à cette architecture, le composant va diffuser un événement "TâcheTerminée" dans le système et :
 
-- La liste des tâches va écouter cet évènement, et retirer la tache.
+- La liste des tâches va écouter cet évènement, et retirer la tâche.
 - Les compteurs vont aussi écouter l’événement, et retirer 1 si besoin.
 - La tâche courante va simplement se vider.
 
@@ -62,7 +62,7 @@ Cet évènement pourrait également avoir des sources différentes (le bouton st
 
 Le store est donc une architecture basée sur les principes d'Event-Sourcing : il s'agit d'envoyer dans le système des événements qui seront écoutés et traités. Il est de la responsabilité de chaque unité de code de savoir quels événements écouter.
 
-Pour que le store fonctionne, les événements doivent avoir une valeur métier et expliciter l'intention de l'utilisateur (Terminer la tâche) et non une intention "technique" (Retirer la tache)...
+Pour que le store fonctionne, les événements doivent avoir une valeur métier et expliciter l'intention de l'utilisateur (Terminer la tâche) et non une intention "technique" (Retirer la tâche)...
 
 J'insiste sur cette distinction, car malheureusement, j'ai souvent croisé la seconde façon de faire et cela mène très rapidement à un code complexe, où la moindre action utilisateur provoque l'envoi d'une dizaine d’événements dans le store... Des heures de jeu de pistes en perspective...
 
